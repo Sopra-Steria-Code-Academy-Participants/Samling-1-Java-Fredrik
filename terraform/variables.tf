@@ -6,11 +6,29 @@ variable "environment" {
 variable "rg_name" {
   type        = string
   description = "The resource group name"
-  default     = "TODO"
+  default     = "rc-codeacademy-fp"
 }
 
 variable "rg_location" {
   type        = string
   description = "Azure region for Right Cloud resources"
   default     = "West Europe"
+}
+
+variable "location" {
+  type        = string
+  description = "Azure region for Right Cloud resources"
+  default     = "West Europe"
+}
+
+variable "app_service_plan" {
+  type        = string
+  description = ""
+  default     = "CodeAcademy-JAVA-ServicePlan-FP"
+}
+
+variable "app_service" {
+  type        = string
+  description = ""
+  default     = "CodeAcademy-JAVA-Service-FP"
 }
